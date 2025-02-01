@@ -1,0 +1,1014 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 5000px;
+}
+.image1{
+    width: 70px;
+    height: 50px;
+    border-radius: 35px;
+}
+.logo{
+    display: flex;
+    gap: 30px;
+}
+ .parent{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 27px;
+    width: 100%;
+    height: 95px;
+    top: 0;
+    background-color:white;
+    z-index: 10;
+ }
+ .pages i{
+    margin-left: 5px;
+ }
+.head1{
+    text-transform: capitalize;
+    font-family: "jost", serif;
+    font-size: 30px;
+}
+.head1span{
+    color: burlywood;
+    font-weight: 400;
+}
+.header ,.list{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+.header >ul >li{
+    padding: 5px 15px;
+    position: relative;
+    z-index: 15;
+}
+.header ul li a{
+    position: relative;
+}
+.header >ul >li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: 0.5s;
+    border-left: 1px solid burlywood;
+    border-right: 1px solid burlywood;
+}
+.header >ul >li:hover::before{
+    height: 100%;
+}
+.header >ul >li::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: 0.5s;
+    border-top: 1px solid burlywood;
+    border-bottom: 1px solid burlywood; 
+}
+.header >ul >li:hover::after{
+    width: 100%;
+}
+.list,.dropdownpages,.dropdownblog{
+    list-style:none;
+}
+.list li a{
+    font-size: 23px;
+    font-family: "jost", serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.dropdown-menu{
+    display: flex;
+    display: none;
+    box-shadow: 1px 1px 1px 1px gray;
+    margin-top: 5px;
+    background-color:white;
+}
+.h3blog,.h3pages{
+    color: gray;
+    font-family: "jost", serif;
+    font-weight:300 ;
+    border-bottom: 2px dotted burlywood;
+    width: fit-content;
+}
+.a-dropdown{
+    color: black;
+}
+.header> ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+}
+.header>ul .pages{
+    position: relative;
+}
+.header > ul .pages .dropdown-menu{
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 400px;
+    height: 320px;
+    border-radius: 24px;
+    transition: 0.5s;
+    margin-left: -150px;
+    transform: scale(0);
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 7px;
+    border: 1px solid gray ;
+}
+.header>ul .pages:hover .dropdown-menu{
+    transform: scale(1);
+}
+.header > ul .pages .dropdown-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+.list li a{
+    color: black;
+}
+.a-dropdown:hover{
+    color: burlywood;
+}
+.list .pages ul li a:hover{
+    transform: scale(1.01);
+    transition: 0.5s;
+    font-size: 24px;
+}
+.header-icon{
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+    padding: 10px;
+}
+.header-icon i:hover{
+    color: burlywood;
+}
+.shop{
+    position: relative;
+}
+.header-icon > .shop::after{
+    content: "2";
+    position: absolute;
+    top: -40px;
+    right: -15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.header-icon >.shop:hover::after{
+    transform: translateY(-5px);
+}
+.header-icon > .shop::after{
+    content: "2";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -11.5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 17px;
+    background-color: burlywood;
+    color: white;
+}
+/* ********************************************************************* */
+.header2{
+    background-color: burlywood;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.headerp{
+    text-transform: capitalize;
+    font-family:"jost", serif ;
+    padding: 12px;
+    font-size: 22px;
+}
+.header2span{
+    text-decoration: underline;
+    color: white; 
+    margin-left: 20px;
+}
+.headerp:hover{
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+.header2span:hover{
+    letter-spacing: 1px;
+}
+.container{
+    position: relative;
+}
+.home{
+    width: 100%;
+    height: 877px;
+    background-image: url(../images/macadamia-body-lotion-skin-cream.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 8;
+}
+.home-content{
+    position: absolute;
+    width: 60%;
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.home-p{
+    color: burlywood;
+    font-size: 70px;
+    text-transform: capitalize;
+    font-family: "Clicker Script";
+}
+.home-h2{
+    color: black;
+    margin: 20px 0;
+    font-size:50px;
+}
+.home-p2{
+    text-transform: capitalize;
+    color: gray;
+    line-height: 25px;
+    font-family: "jost", serif;
+    font-size: 17px;
+}
+.home-btn{
+    width: 155px;
+    height: 50px;
+    border: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color:burlywood;
+    border: 1px solid burlywood;
+} 
+.home-btn:hover{
+  background-color: white;
+    transition: 0.5s;
+}  
+/* ***************************************************************** */
+.sec2{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec2 .sec2container{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+.sec2 .sec2container .card{
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+.sec2 .sec2container .card .image ,.image2 ,.image3{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+.sec2 .sec2container .card:hover .image{
+   transform: scale(1.1);
+}
+.sec2 .sec2container .card:hover .image2{
+    transform: scale(1.1);
+ }
+ .sec2 .sec2container .card:hover .image3{
+    transform: scale(1.1);
+ }
+.sec2 .sec2container .card .text{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    width: 210px;
+    margin-left: -110px;
+    text-align: center;
+    font-family: "jost", serif;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+.sec2 .sec2container .card .text h2{
+    margin-bottom: 5px;
+    color:white;
+}
+.sec2 .sec2container .card .text a{
+    color:white;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sec2 .sec2container .card:hover .text{
+    top: 80%;
+}
+.sec2 .sec2container .card .image{
+    background-image: url(../images/male-self-care-setting-still-life.jpg);
+}
+.sec2 .sec2container .card .image2{
+background-image: url(../images/front-view-composition-natural-argan-product.jpg);
+}
+.sec2 .sec2container .card .image3{
+background-image: url(../images/top-view-postpartum-box-still-life.jpg);
+}
+/* ********************************************************************************* */
+.sec3{ 
+    margin-top: 175px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.sec3 *{
+    perspective: 800px;
+}
+.sec3 .sec3title{
+    width: 80%;
+    height: 60px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "jost", serif;
+    font-size: 25px;
+    padding: 10px;
+}
+.sec3h2{
+    font-weight: 400;
+}
+.sec3 .sec3title ul{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+.sec3 .sec3title ul li{
+   cursor: pointer;
+}
+.sec3 .sec3title .sec3li{
+    color: burlywood;
+    position: relative;
+}
+.sec3 .sec3title .sec3li::before{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: burlywood;
+    position: absolute;
+    top: 120%;
+    left: 0;
+}
+.sec3 .sec3container{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.sec3 .sec3container .sec3card{
+    width: 25%;
+    height: 100%;
+}
+.sec3 .sec3container .sec3card .imagecontainer{
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/FLPL-8-Private-Label-Mens-Products-That-are-Guaranteed-to-Sell-Well.jpg);
+    gap: 20px;
+}
+.sec3 .sec3container .sec3card .container2{
+    background-image: url(../images/Untitleddesign_8.webp);
+}
+.sec3 .sec3container .sec3card .container3{
+    background-image: url(../images/spend.webp);
+}
+.sec3 .sec3container .sec3card .container4{
+    background-image: url(../images/daily_guide_to_better_skincare_2000x.webp);
+}
+.sec3 .sec3container .sec3card .sec3image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+.sec3 .sec3container .sec3card .imagecontainer ul{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 10px;
+    background-color: #eeeeee;
+    opacity: 0;
+    transition: 0.5s;
+}
+.sec3 .sec3container .sec3card:hover .imagecontainer ul{
+    top: 80%;
+    opacity: 1;
+}
+.sec3 .sec3container .sec3card .imagecontainer ul li{
+    padding: 10px;
+    font-size: 20px;
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.sec3 .sec3container .sec3card .imagecontainer ul li:hover{
+    color:white;
+    background-color: burlywood;
+}
+.sec3 .sec3container .sec3card .imagecontainer .sec3image .face,
+.sec3 .sec3container .sec3card .imagecontainer .sec3image .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.sec3 .sec3container .sec3card .imagecontainer .sec3image .back{
+    transform: rotateY(-180deg);
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/boomers-using-cbd-oil-cream-treating-body-pain.jpg);
+}
+.sec3 .sec3container .sec3card .imagecontainer .sec3image .back2{
+    background-image: url(../images/jojoba-oil-dropper-composition.jpg);
+}
+.sec3 .sec3container .sec3card .imagecontainer .sec3image .back3{
+    background-image: url(../images/freshbeautyfix-baby-skincare-essentials-flatlay.webp);
+}
+.sec3 .sec3container .sec3card .imagecontainer .sec3image .back4{
+    background-image: url(../images/how-to-start-a-skincare-line-glow-oasis.webp);
+}
+.sec3 .sec3container .sec3card:hover .sec3image{
+    transform: rotateY(-180deg);
+}
+.imagecontainer ul{
+    list-style: none;
+}
+.sec3 .sec3container .sec3card .sec3text{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    font-family:"jost", serif; 
+    text-align: center;
+}
+.sec3 .sec3container .sec3card .sec3text h3{
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.sec3 .sec3container .sec3card:hover .sec3text h3{
+    color:burlywood;
+}
+.sec3 .sec3container .sec3card .sec3text p{
+    color: gray;
+}
+.sec3 .sec3container > a i{
+    font-size: 25px;
+    color: black;
+    transition: 0.5s;
+}
+.sec3 .sec3container > a:hover i{
+    color: burlywood;
+}
+/* **************************************************************************** */
+.sec4testimonail{
+    padding: 50px;
+    height: 40vh;
+    background-color:  rgba(222,184,135,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'jost',sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    box-shadow: 1px 1px 1.5px 1.5px  gray ;
+}
+.sec4testimonail .sec4container{
+    width: 80%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec4testimonail .sec4container p{
+    width: 500px;
+    text-align: center;
+    color: rgba(0,0,0,0.4);
+}
+.sec4testimonail .sec4container i{
+    color: black;
+    font-size: 30px;
+}
+.sec4testimonail .sec4container i:hover{
+    color: white;
+}
+.sec4testimonail .items .sec4text p{
+    color: rgba(0,0,0,0.5);
+    font-weight: 600;
+} 
+.sec4testimonail .items{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.sec4testimonail .items .sec4image{
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/360_F_425659755_5BaLdNbbCtQbbiz1JNFBikshfiCWI5NE.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+}
+/* ******************************************************************************** */
+.sec5{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'jost',sans-serif;
+    gap: 20px;
+}
+.sec5 h2{
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 80px;
+}
+.sec5 .sec5container{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.sec5 .sec5container .sec5card{
+    margin-top: 80px;
+    width: 30%;
+    height: 105%;
+}
+.sec5 .sec5container .sec5card .sec5image{
+    width: 100%;
+    height: 105%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.sec5 .sec5container .sec5card .sec5image ul {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 10px;
+    background-color: #eeeeee;
+    opacity: 0;
+    transition: 0.5s;
+}
+.sec5 .sec5container .sec5card:hover .sec5image ul{
+    top: 80%;
+    opacity: 1;
+}
+.sec5 .sec5container .sec5card .sec5image ul li{
+    padding: 13px;
+    font-size: 25px;
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.sec5 .sec5container .sec5card .sec5image ul li:hover{
+    color:white;
+    background-color: burlywood;
+}
+.sec5 .sec5container .sec5card .sec5image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    opacity: 0;
+    transition: 1s;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/SFM_Shelfie_1.webp);
+}
+.sec5 .sec5container .sec5card .im2::before{
+    background-image: url(../images/46875bb083632fb4904156ef61cc60b8.jpg);
+}
+.sec5 .sec5container .sec5card .im3::before{
+    background-image: url(../images/2XJZE6XDZNADBCDKEA5LBRFJFU.jpg);
+}
+.sec5 .sec5container .sec5card .im4::before{
+    background-image: url(../images/images.jpeg);
+}
+
+.sec5 .sec5container .sec5card:hover .sec5image::before{
+    opacity: 1;
+    top: 0%;
+}
+.sec5 .sec5container .sec5card .img1{
+    background-image: url(../images/images.avif);
+}
+.sec5 .sec5container .sec5card .img2{
+    background-image: url(../images/rs_1024x759-230301091924-1024-ecomm-WHM_Skincare_Brands-gj.avif);
+}
+.sec5 .sec5container .sec5card .img3{
+    background-image: url(../images/2-New-Born-Baby-Skincare-Proucts.jpg);
+}
+.sec5 .sec5container .sec5card .img4{
+    background-image: url(../images/giada-tamborrino-studio-liv-botanics-sustainable-packaging-design.jpg);
+}
+.sec5 .sec5container .sec5card .sec5text{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    font-family:"jost", serif; 
+    text-align: center;
+}
+.sec5 .sec5container .sec5card .sec5text h3{
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.sec5 .sec5container .sec5card:hover .sec5text h3{
+    color:burlywood;
+}
+.sec5 .sec5container .sec5card .sec5text p{
+    color: gray;
+}
+.sec5 .sec5container > a i{
+    font-size: 25px;
+    color: black;
+    transition: 0.5s;
+}
+.sec5 .sec5container > a:hover i{
+    color: burlywood;
+}
+/* ************************************************************************************ */
+.news{
+    margin-top: 240px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgba(222,184,135,0.6);
+    box-shadow: 1px 1px 2px 2px  gray ;
+    font-family: "jost", serif;
+    text-transform: capitalize;
+}
+.news h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.news .sec6container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    gap: 20px;
+}
+.news .sec6container .sec6card{
+    width: 33%;
+    height: 100%;
+}
+.news .sec6container .sec6card .sec6image{
+    height: 60%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+.news .sec6container .sec6card .image4{
+    background-image: url(../images/1687767895_en-idei-club-p-organic-skincare-products-dizain-63.jpg);
+}
+.news .sec6container .sec6card .image5{
+    background-image: url(../images/afab2c834ecbca5b2412a55923770458.jpg);
+}
+.news .sec6container .sec6card .image6{
+    background-image: url(../images/a5e44f1bfa955d8f7f4fa6dfd84ec678.jpg);
+}
+
+.news .sec6container .sec6card .sec6image:hover{
+    transform: scale(1.03);
+}
+.news .sec6container .sec6card .sec6text{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.news .sec6container .sec6card:hover h3{
+    color: white;
+}
+.news .sec6container .sec6card .sec6text a{
+    text-decoration: underline;
+    color: black;
+}
+.news .sec6container .sec6card .sec6text:hover a{
+  font-size: 20px;
+}
+.news .sec6container .sec6card .sec6text p{
+    color: gray;
+}
+.news .sec6container .sec6card .sec6text h3{
+    font-weight: 400;
+}
+/* *********************************************************************************** */
+.payment{
+    margin-top: 50px;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    font-family:"jost", serif ;
+    text-transform: capitalize;
+}
+.payment .sec7container{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    gap: 20px;
+}
+.payment .sec7container .sec7card{
+    width: 25%;
+    height:100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.payment .sec7container .sec7card i{
+    font-size: 40px;
+   font-weight: 600;
+   visibility: hidden;
+}
+.payment .sec7container .sec7card .icon{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    overflow: hidden;
+}
+.payment .sec7container .sec7card .icon::before{
+    font-family: "font awesome 6 free";
+    font-weight: 600;
+    font-size: 40px;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    color:rgba(128, 128, 128,0.5);
+    transition: 0.2s;
+}
+.payment .sec7container .sec7card:hover .icon::before{
+    top: -150%;
+}
+.payment .sec7container .sec7card .icon::after{
+    font-family: "font awesome 6 free";
+    font-weight: 600;
+    font-size: 40px;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    transition: 0.2s;
+}
+.payment .sec7container .sec7card:hover .icon::after{
+    top: 0%;
+    color: burlywood;
+}
+.payment .sec7container .sec7card .icon::before,
+.payment .sec7container .sec7card .icon::after{
+    content: '\f0d1';
+}
+.payment .sec7container .sec7card .icon2::before,
+.payment .sec7container .sec7card .icon2::after{
+    content: '\f53d';
+}
+.payment .sec7container .sec7card .icon3::before,
+.payment .sec7container .sec7card .icon3::after{
+    content: '\f53a';
+}
+.payment .sec7container .sec7card .icon4::before,
+.payment .sec7container .sec7card .icon4::after{
+    content: '\f4fd';
+}
+/* *************************************************************************************** */
+.footer{
+    padding: 20px;
+    margin-top: 50px;
+    width: 100%;
+    height: 67vh;
+    background-color:rgba(222,184,135,0.6);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 1fr 2px 5fr 2px 50px;
+    grid-template-areas:
+    'text text text . search search search search search . icons icons'
+    'hr hr hr hr hr hr hr hr hr hr hr hr'
+    'logo logo logo . ul1 . ul2 . ul3 . ul4 . '
+    'hr-2 hr-2 hr-2 hr-2 hr-2 hr-2 hr-2 hr-2 hr-2 hr-2 hr-2 hr-2'
+    '. .last last last last last last last last . .';
+    gap: 10px;
+}
+.footer .footertext{
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: gray;
+    font-family:"jost", serif ;
+}
+.footer .footertext h3{
+    text-transform: capitalize;
+    color: black;
+    font-size: 30px;
+}
+.footer .footertext p{
+    font-size: 19px;
+}
+.search{
+    grid-area: search;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search input{
+    outline: none;
+    width: 70%;
+    height:50px;
+    padding-left: 20px;
+    font-size: 17px;
+}
+input::placeholder {
+    font-size: 20px; 
+  }
+.search a{
+    height: 50px;
+    width: 140px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:gray;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.search a:hover{
+    scale: 1.1;
+}
+.footer .links{
+    grid-area: icons;
+    list-style: none;
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    color: darkgrey;
+}
+.footer .links li i{
+    transition: 0.5s;
+    font-size: 30px;
+}
+.footer .links li:hover i{
+    scale: 1.06;
+    color: black;
+    cursor: pointer;
+}
+.hr-1 {
+    grid-area: hr;
+    height: 1px;
+    background-color: black;
+}
+.footer .logo{
+    grid-area: logo;
+    display: flex;
+    margin-top: 100px;
+}
+.footer .ul1 , .ul2 ,.ul3,.ul4{
+    grid-area: ul1;
+    list-style: none;
+    font-family: "jost", serif;
+    margin-top: 100px;
+    line-height: 35px;
+}
+.footer .ul2{
+    grid-area: ul2;
+}
+.footer .ul3{
+    grid-area: ul3;
+}
+.footer .ul4{
+    grid-area: ul4;
+}
+.footer ul h4{
+    font-size: 23px;
+}
+.footer ul li{
+    color: gray;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.footer ul li:hover{
+    text-decoration: underline;
+    scale: 1.06;
+    cursor: pointer;
+}
+.hr-2{
+    margin-top: -60px;
+    grid-area: hr-2;
+    height: 1px;
+    background-color: black;
+}
+.last{
+    grid-area: last;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: "jost",serif;
+    font-size: 20px;
+}
+.last span{
+    color: white;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.last span:hover{
+    letter-spacing:1px ;
+    text-decoration: underline;
+}
+.last i {
+    animation-name: heart;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-size: 25px;
+    color: white;
+    margin: 0 10px;
+    scale: 0.6;
+}
+@keyframes heart {
+    0%{
+        scale: 0.6;
+        opacity: 0;
+    }
+    50%{
+        scale: 1.1;
+        opacity: 1;
+    }
+}
